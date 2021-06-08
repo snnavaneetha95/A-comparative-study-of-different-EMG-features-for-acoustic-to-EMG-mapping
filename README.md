@@ -9,10 +9,10 @@ For the Speech to EMG mapping task, we choose MFCC features for speech represent
 Experiments are done with individual features and combinations.
 We also reconstruct original EMG signal from its features using a CNN-BLSTM network.
 Following experiments with features are done
-a.	LFM+LFP+HFP+HFZCR+HFRM
-b.	LFM+LFP+HFP+HFRM
-c.	LFM+LFP+HFP+HFZCR+HFRM+Hilbert
-d.	LFM+LFP+HFP+HFRM+Hilbert 
+(a).	LFM+LFP+HFP+HFZCR+HFRM
+(b).	LFM+LFP+HFP+HFRM
+(c).	LFM+LFP+HFP+HFZCR+HFRM+Hilbert
+(d).	LFM+LFP+HFP+HFRM+Hilbert 
  
 Description about the codes:
 pre-processing codes/callProcessEmg_UKA.m  this code calls the matlab functions of feature extraction methods
