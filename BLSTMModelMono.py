@@ -59,24 +59,9 @@ def concordance_correlation_coefficient(y_true, y_pred):
   numerator=2*cor*sd_true*sd_pred
   denominator=var_true+var_pred+(mean_true-mean_pred)**2
   return numerator/denominator
-
-def cheby_highpass_filter(data,cutoff,fs,order):
-  nyq=0.5*fs
-  normal_cutoff=cutoff/nyq
-  b,a=scipy.signal.cheby1(order,1,normal_cutoff, btype='high', analog=False)
-  y=filtfilt(b,a,data)
-  return y
   
-def cheby_lowpass_filter(data,cutoff,fs,order):
-  nyq=0.5*fs
-  normal_cutoff=cutoff/nyq
-  b,a=scipy.signal.cheby1(order,1,normal_cutoff, btype='low', analog=False)
-  y=filtfilt(b,a,data)
-  return y
-  
-cutoff=1000
 fs=16000
-order=4
+
 pth='3-300/'
 #os.chdir('/home2/data/Manthan/101/splicedwav/')
 os.chdir('/home2/data/navaneetha/speech-emg/AudibleUKA/')
