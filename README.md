@@ -1,13 +1,13 @@
 We explored different EMG feature extraction methods, which are used in context of speech tasks and non-speech tasks.
 
-Non-Speech Temporal(NST) features: MAV, RMS, DAV and LFB
+Non-Speech Temporal(NST) features: MAV, RMS, DAV and LFB.
 
 EMG features used in speech context: LFM, LFP, HFP, HFZCR and HFRM(these are called time domain(TD) features).
 
 Along with above features we propose a novel Hilbert features.
 
 For the Speech to EMG mapping task, we choose MFCC features for speech representations and all the above mentioned features are experimented for EMG.
-Experiments are done with individual features and with combination.
+Experiments are done with individual features and combination of features.
 
 We also reconstruct original EMG signal from its features using a CNN-BLSTM network.
 Following experiments with features are done
